@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+}
+
+@font-face {
+    font-family: Head-fonts;
+    src: url(../Fonts/Raleway/static/Raleway-Black.ttf);
+
+}
+
+@font-face {
+    font-family: Head-Bold-fonts;
+    src: url(../Fonts/Raleway/static/Raleway-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: Paragraf-fonts;
+    src: url(../Fonts/Open_Sans/static/OpenSans-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: Light-fonts;
+    src: url(../Fonts/Raleway/static/Raleway-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: Light-fonts-2;
+    src: url(../Fonts/Raleway/static/Raleway-Light.ttf);
+
+}
+
+
+
+/* !------Header start------------------------------------------ */
+header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: Head-fonts;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li a {
+    font-family: Paragraf-fonts;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.btn a {
+    font-family: Paragraf-fonts;
+    text-decoration: none;
+    background-color: #92867D;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 25px;
+    font-size: 18px;
+    border: none;
+    transition: all .5s ease;
+}
+
+.btn a:hover {
+    color: #92867D;
+    border: 1px solid #92867D;
+    background-color: #ffffff;
+}
+
+/* ! ---- Main start ------------------------------------ */
+
+/* * ---- Hero section start ------------------- */
+#hero {
+    width: 100%;
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../Media/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.hero-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+    padding: 215px 0;
+}
+
+.hero-img {
+    width: 57px;
+    height: 57px;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-info .decor {
+    font-size: 20px;
+    font-family: Head-Bold-fonts;
+    color: white;
+}
+
+.hero-info h1 {
+    font-size: 60px;
+    font-family: Light-fonts;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.hero-span {
+    font-family: Paragraf-fonts;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-span a {
+    text-decoration: none;
+    font-family: Paragraf-fonts;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.hero-img-2 {
+    margin-top: 15px;
+    width: 64px;
+    height: 64px;
+}
+
+.hero-img-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* * ---- Hero section end ------------------- */
+
+/* *---Interior section start----------- */
+#Interior {
+    padding: 80px 0;
+}
+
+.interior-left {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.interior-left h2 {
+    font-family: Light-fonts-2;
+    width: 60%;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.interior-right {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.right-text {
+    height: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: Light-fonts;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+
+
+}
+
+.right-text p {
+    margin: 15px;
+}
+
+.right-text a {
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Light-fonts;
+    color: black;
+
+
+}
+
+
+
+.interior-left img {
+    width: 75%;
+    height: 70%;
+    object-position: center;
+
+
+}
+
+/* *---Interior section end----------- */
+/* * Choose section start ------------ */
+#choose {
+    padding: 40px 0;
+    background-color: #A996BB;
+}
+
+#choose h2 {
+    font-size: 48px;
+    font-family: Light-fonts-2;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.choose-cards {
+    gap: 50px;
+}
+
+.choose-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choose-card h3 {
+    font-family: Head-Bold-fonts;
+    font-size: 20px;
+    color: white;
+}
+
+.choose-card p {
+    font-family: Paragraf-fonts;
+    font-size: 18px;
+    color: white;
+}
+
+/* * Choose section end */
+
+/* * Furniture section start */
+
+#furniture {
+    padding: 80px 0;
+}
+
+.furniture-right {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.furniture-right h2 {
+    font-family: Light-fonts-2;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.furniture-left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.f-left-text {
+    height: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: Light-fonts;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+
+
+}
+
+.f-left-text p {
+    margin: 15px;
+}
+
+.f-left-text a {
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Light-fonts;
+    color: black;
+
+
+}
+
+
+
+.furniture-right img {
+    width: 75%;
+    height: 70%;
+    object-position: center;
+
+
+}
+
+/* * Furniture section end */
+/* * Image section start */
+#image {
+    padding: 200px;
+    background-image: url(../Media/img-section.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+/* * Image section end */
+
+/* * Faq sectiion start */
+#faq {
+    padding: 100px 0;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Light-fonts-2;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.accordion-button {
+    font-family: Light-fonts;
+    background-color: white;
+    color: #333;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.accordion-button::after {
+    color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* * Faq sectiion end */
+
+/* * Social section start */
+#social {
+    padding: 50px 0;
+}
+
+#social h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Light-fonts-2;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-list {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.social-list a {
+
+    color: #A996BB;
+    font-size: 40px;
+}
+
+.social-cards {
+    gap: 10px;
+}
+
+.social-card {
+    width: 100%;
+    height: 75%;
+}
+
+.social-card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* * Social section end */
+
+
+/* * Quote section start */
+
+#quote {
+    background-color: #BFB29C;
+    padding: 50px 0;
+
+}
+
+.quote-wrapper h3 {
+    width: 55%;
+    text-align: center;
+
+    font-family: Light-fonts-2;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+
+.quote-wrapper h5 {
+    text-align: center;
+    font-family: Head-Bold-fonts;
+    font-size: 20px;
+    color: white;
+}
+
+.quote-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.quote-img {
+    width: 20%;
+    height: 20%;
+}
+
+.quote-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+/* * Quote section send  */
+
+/* ! Footer start ---------------- */
+
+.footer-wrapper{
+ 
+    width: 100%;
+    height: 100%;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Paragraf-fonts;
+}
+.footer-wrapper .desc-1{
+    padding: 50px;
+    background-color: #A996BB;
+}
+.footer-wrapper .desc-2{
+    padding: 50px;
+    background-color: #333333;
+}
+.desc-2 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+/* ! Footer end ---------------- */
